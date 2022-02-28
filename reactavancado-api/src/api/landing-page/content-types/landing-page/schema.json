@@ -50,6 +50,13 @@
       "repeatable": false,
       "component": "page.section-modules",
       "required": true
+    },
+    "sectionAgenda": {
+      "displayName": "sectionAgenda",
+      "type": "component",
+      "repeatable": false,
+      "component": "page.section-agenda",
+      "required": true
     }
   }
 }
