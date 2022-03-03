@@ -1,12 +1,20 @@
+// Packages
 import React from 'react'
 
+// Components
 import Heading from 'components/Heading'
 import Container from 'components/Container'
 
+// Utils
 import icons from './content'
+
+// Styles
 import * as S from './styles'
 
 const SectionTech = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Wrapper>
     <Container>
       <Heading reverseColor>Tecnologias utilizadas</Heading>

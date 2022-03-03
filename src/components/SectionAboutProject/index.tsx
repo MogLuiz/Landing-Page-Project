@@ -1,11 +1,17 @@
+// Packages
 import React from 'react'
 
+// Components
 import Heading from 'components/Heading'
 import Container from 'components/Container'
 
+// Styles
 import * as S from './styles'
 
 const SectionAboutProject = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Wrapper>
     <Container>
       <S.Container>

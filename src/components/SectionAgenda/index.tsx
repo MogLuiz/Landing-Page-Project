@@ -1,11 +1,17 @@
+// Packages
 import React from 'react'
 
+// Components
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 
+// Styles
 import * as S from './styles'
 
 const SectionAgenda = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <Container id="agenda">
     <Heading reverseColor>Curso 100% completo!</Heading>
     <S.Text>

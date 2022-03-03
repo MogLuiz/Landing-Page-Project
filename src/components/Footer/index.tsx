@@ -1,10 +1,16 @@
+// Packages
 import React from 'react'
 
+// Components
 import Container from 'components/Container'
 
+// Styles
 import * as S from './styles'
 
 const Footer = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Wrapper>
     <Container>
       <p>

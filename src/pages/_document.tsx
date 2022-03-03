@@ -1,4 +1,7 @@
+// Packages
 import React from 'react'
+
+// Next Components
 import Document, {
   Html,
   Head,
@@ -7,6 +10,8 @@ import Document, {
   DocumentContext
 } from 'next/document'
 import Analytics from 'components/Analytics'
+
+// Styles
 import { ServerStyleSheet } from 'styled-components'
 
 export default class NextDocument extends Document {
@@ -35,7 +40,9 @@ export default class NextDocument extends Document {
       sheet.seal()
     }
   }
-
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   render() {
     return (
       <Html lang="pt-br">

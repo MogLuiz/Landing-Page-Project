@@ -1,5 +1,7 @@
+// Packages
 import React from 'react'
 
+// Styles
 import * as S from './styles'
 
 type Props = {
@@ -17,6 +19,9 @@ const Button: React.FC<Props> = ({
   href,
   onClick
 }) => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.ButtonWrapper
     href={href}
     wide={wide}

@@ -1,13 +1,21 @@
+// Packages
 import React from 'react'
 
+// Components
 import Heading from 'components/Heading'
 import Container from 'components/Container'
 import CardModule from 'components/CardModule'
 
+// Utils
 import content from './content'
+
+// Styles
 import * as S from './styles'
 
 const SectionModules = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <Container>
     <Heading reverseColor>Módulos deste curso</Heading>
 

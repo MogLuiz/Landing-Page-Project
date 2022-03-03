@@ -1,6 +1,8 @@
+// Packages
 import React, { useEffect } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
 
+// Styles
 import * as S from './styles'
 
 type Props = {
@@ -11,6 +13,9 @@ type Props = {
 }
 
 const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
+  // -------------------------------------------------
+  // Hooks
+  // -------------------------------------------------
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 
@@ -26,7 +31,9 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
 
     texts.forEach((text) => observer.observe(text))
   })
-
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   return (
     <S.Card>
       <S.User>

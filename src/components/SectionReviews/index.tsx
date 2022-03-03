@@ -1,11 +1,16 @@
+// Packages
 import React from 'react'
 import Slider from 'react-slick'
 
+// Components
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import ReviewCard from 'components/ReviewCard'
 
+// Utils
 import reviews from './content'
+
+// Styles
 import * as S from './styles'
 
 const settings = {
@@ -31,6 +36,9 @@ const settings = {
 }
 
 const SectionReviews = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <Container>
     <Heading reverseColor>Junte-se a mais de 200 mil alunos</Heading>
 

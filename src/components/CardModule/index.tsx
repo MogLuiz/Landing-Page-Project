@@ -1,5 +1,7 @@
+// Packages
 import React from 'react'
 
+// Styles
 import * as S from './styles'
 
 type Props = {
@@ -9,6 +11,9 @@ type Props = {
 }
 
 const CardModule: React.FC<Props> = ({ title, subTitle, children }) => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Card>
     <S.TitleWrapper>
       <S.Title>{title}</S.Title>

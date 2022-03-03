@@ -1,13 +1,21 @@
+// Packages
 import React from 'react'
 
+// Components
 import Heading from 'components/Heading'
 import Container from 'components/Container'
 import ProfileCard from 'components/ProfileCard'
 
+// Utils
 import content from './content'
+
+// Styles
 import * as S from './styles'
 
 const SectionAboutUs = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <Container>
     <Heading reverseColor>Quem somos nós?</Heading>
 

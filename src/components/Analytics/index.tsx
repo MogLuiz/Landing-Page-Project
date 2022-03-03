@@ -1,6 +1,10 @@
+// Packages
 import React from 'react'
 
-const Analytics = () => (
+const Analytics: React.FC = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <>
     <script
       async

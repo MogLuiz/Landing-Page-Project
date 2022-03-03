@@ -1,5 +1,7 @@
+// Packages
 import React from 'react'
 
+// Assets
 import { GrGithub } from 'react-icons/gr'
 import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
@@ -31,6 +33,9 @@ const ProfileCard: React.FC<Props> = ({
   socialLinks,
   description
 }) => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Card key={name}>
     <S.Image>
       <source

@@ -1,12 +1,20 @@
+// Packages
 import React from 'react'
 
+// Components
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 
+// Utils
 import faq from './content'
+
+// Styles
 import * as S from './styles'
 
 const SectionFaq = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Wrapper>
     <S.Content>
       <Container>

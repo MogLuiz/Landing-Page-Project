@@ -1,9 +1,16 @@
+// Packages
 import React from 'react'
+
+// Assets
 import { FaFacebook, FaTwitter } from 'react-icons/fa'
 
+// Styles
 import * as S from './styles'
 
 const ShareButtons = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Wrapper>
     <a
       href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Freactavancado.com.br%2F"

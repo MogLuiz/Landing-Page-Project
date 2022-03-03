@@ -1,5 +1,7 @@
+// Packages
 import React from 'react'
 
+// Styles
 import * as S from './styles'
 
 export type Props = {
@@ -13,6 +15,9 @@ const Heading: React.FC<Props> = ({
   lineBottom = false,
   children
 }) => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <S.Wrapper reverseColor={reverseColor} lineBottom={lineBottom}>
     {children}
   </S.Wrapper>

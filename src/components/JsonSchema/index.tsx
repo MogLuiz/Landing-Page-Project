@@ -1,7 +1,11 @@
+// Packages
 import React from 'react'
 import { CourseJsonLd, ProductJsonLd } from 'next-seo'
 
 const JsonSchema = () => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <>
     <CourseJsonLd
       courseName="React Avançado"

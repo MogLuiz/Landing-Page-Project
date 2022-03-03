@@ -24,6 +24,9 @@ import { LandingPageProps } from 'types/api'
 import { GetStaticProps } from 'next'
 
 const Index: React.FC<LandingPageProps> = ({ logo }) => (
+  // -------------------------------------------------
+  // Render
+  // -------------------------------------------------
   <>
     <SectionHero logo={logo} />
     <SectionAboutProject />
