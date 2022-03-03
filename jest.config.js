@@ -1,7 +1,10 @@
+// For a detailed explanation regarding each configuration property, visit:
+// https://jestjs.io/docs/en/configuration.html
+
 module.exports = {
-  testEnvironment: "jsdom",
-  testPathIgnorePatterns: ["/node_modules/", "/.next/"],
+  testEnvironment: 'jsdom',
+  testPathIgnorePatterns: ['/node_modules/'],
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/**/stories.tsx'],
-  setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"]
+  collectCoverageFrom: ['src/**/*.js'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setup.js']
 }

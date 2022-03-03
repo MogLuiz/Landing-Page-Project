@@ -1,13 +1,15 @@
+import React from 'react'
 import Document, {
   Html,
   Head,
   Main,
   NextScript,
   DocumentContext
-} from "next/document"
-import { ServerStyleSheet } from "styled-components"
+} from 'next/document'
+import Analytics from 'components/Analytics'
+import { ServerStyleSheet } from 'styled-components'
 
-export default class MyDocument extends Document {
+export default class NextDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
@@ -36,11 +38,19 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt-BR">
-        <Head />
+      <Html lang="pt-br">
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/poppins-v9-latin-regular.woff2"
+            as="font"
+            crossOrigin=""
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     )
