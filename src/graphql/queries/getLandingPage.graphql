@@ -26,6 +26,7 @@ fragment header on LandingPage {
 query GETALL_LANDING_PAGE {
   landingPage {
     ...logo
-    ...header
   }
 }
+
+export default GETALL_LANDING_PAGE
