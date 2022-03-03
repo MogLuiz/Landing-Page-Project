@@ -1,6 +1,7 @@
+// Packages
 import React from 'react'
-import { GetStaticProps } from 'next'
 
+// Components
 import SectionHero from 'components/SectionHero'
 import SectionAboutProject from 'components/SectionAboutProject'
 import SectionTech from 'components/SectionTech'
@@ -14,10 +15,15 @@ import SectionFaq from 'components/SectionFaq'
 import Footer from 'components/Footer'
 import JsonSchema from 'components/JsonSchema'
 
+// Graphql
 import client from 'graphql/client'
 import GET_LANDING_PAGE from 'graphql/queries/getLandingPage'
 
-const Index = () => (
+// Types
+import { LandingPageProps } from 'types/api'
+import { GetStaticProps } from 'next'
+
+const Index: React.FC<LandingPageProps> = ({ logo }) => (
   <>
     <SectionHero />
     <SectionAboutProject />
