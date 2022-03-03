@@ -25,7 +25,7 @@ import { GetStaticProps } from 'next'
 
 const Index: React.FC<LandingPageProps> = ({ logo }) => (
   <>
-    <SectionHero />
+    <SectionHero logo={logo} />
     <SectionAboutProject />
     <SectionTech />
     <SectionConcepts />
@@ -42,8 +42,6 @@ const Index: React.FC<LandingPageProps> = ({ logo }) => (
 
 export const getStaticProps: GetStaticProps = async () => {
   const { landingPage } = await client.request(GET_LANDING_PAGE)
-
-  console.log(landingPage)
 
   return {
     props: {

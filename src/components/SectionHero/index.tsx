@@ -19,7 +19,7 @@ type SectionHeroProps = {
 const SectionHero: React.FC<SectionHeroProps> = ({ logo }) => (
   <S.Wrapper>
     <Container>
-      <Logo />
+      <Logo {...logo} />
 
       <S.Content>
         <S.TextBlock>
