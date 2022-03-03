@@ -2,9 +2,7 @@
 import React from 'react'
 
 // Components
-import Logo from 'components/Logo'
-import Button from 'components/Button'
-import Container from 'components/Container'
+import { Logo, Button, Container } from '../index'
 
 // Utils
 import { gaEvent } from 'utils/ga'

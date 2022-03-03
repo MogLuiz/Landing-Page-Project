@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Components
-import Container from 'components/Container'
+import { Container } from '../index'
 
 // Styles
 import * as S from './styles'

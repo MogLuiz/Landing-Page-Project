@@ -5,6 +5,7 @@ import React from 'react'
 import { GrGithub } from 'react-icons/gr'
 import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
+// Styles
 import * as S from './styles'
 
 const icons = {

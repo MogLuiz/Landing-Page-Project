@@ -2,9 +2,7 @@
 import React from 'react'
 
 // Components
-import Heading from 'components/Heading'
-import Container from 'components/Container'
-import CardModule from 'components/CardModule'
+import { Heading, Container, CardModule } from '../index'
 
 // Utils
 import content from './content'

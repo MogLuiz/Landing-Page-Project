@@ -2,8 +2,7 @@
 import React from 'react'
 
 // Components
-import Heading from 'components/Heading'
-import Container from 'components/Container'
+import { Heading, Container } from '../index'
 
 // Styles
 import * as S from './styles'

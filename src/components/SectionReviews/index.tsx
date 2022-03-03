@@ -3,9 +3,7 @@ import React from 'react'
 import Slider from 'react-slick'
 
 // Components
-import Container from 'components/Container'
-import Heading from 'components/Heading'
-import ReviewCard from 'components/ReviewCard'
+import { Container, Heading, ReviewCard } from '../index'
 
 // Utils
 import reviews from './content'

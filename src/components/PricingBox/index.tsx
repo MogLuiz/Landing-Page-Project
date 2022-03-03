@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Button from 'components/Button'
+import { Button } from '../index'
 import { gaEvent } from 'utils/ga'
 
 import * as S from './styles'

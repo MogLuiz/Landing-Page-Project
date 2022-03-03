@@ -2,9 +2,7 @@
 import React from 'react'
 
 // Components
-import Heading from 'components/Heading'
-import Container from 'components/Container'
-import ProfileCard from 'components/ProfileCard'
+import { Heading, Container, ProfileCard } from '../index'
 
 // Utils
 import content from './content'
