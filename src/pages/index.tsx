@@ -25,12 +25,12 @@ import GET_LANDING_PAGE from 'graphql/queries/getLandingPage'
 import { LandingPageProps } from 'types/api'
 import { GetStaticProps } from 'next'
 
-const Index: React.FC<LandingPageProps> = ({ logo }) => (
+const Index: React.FC<LandingPageProps> = ({ logo, header }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
   <>
-    <SectionHero logo={logo} />
+    <SectionHero logo={logo} header={header} />
     <SectionAboutProject />
     <SectionTech />
     <SectionConcepts />

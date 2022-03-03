@@ -6,9 +6,10 @@ import { Logo, Button, Container } from '../index'
 
 // Utils
 import { gaEvent } from 'utils/ga'
+import { getImageUrl } from 'utils/getImageUrl'
 
 // Types
-import { LogoProps } from 'types/api'
+import { HeaderProps, LogoProps } from 'types/api'
 
 // Styles
 import * as S from './styles'
@@ -18,9 +19,10 @@ const onClick = () =>
 
 type SectionHeroProps = {
   logo: LogoProps
+  header: HeaderProps
 }
 
-const SectionHero: React.FC<SectionHeroProps> = ({ logo }) => (
+const SectionHero: React.FC<SectionHeroProps> = ({ logo, header }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
@@ -30,24 +32,18 @@ const SectionHero: React.FC<SectionHeroProps> = ({ logo }) => (
 
       <S.Content>
         <S.TextBlock>
-          <S.Title>React Avançado</S.Title>
-          <S.Description>
-            Crie aplicações reais com NextJS, Strapi, GraphQL e mais!
-          </S.Description>
+          <S.Title>{header.title}</S.Title>
+          <S.Description>{header.description}</S.Description>
           <S.ButtonWrapper>
-            <Button
-              href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOMAR22"
-              onClick={onClick}
-              wide
-            >
+            <Button href={header.button.url} onClick={onClick} wide>
               Comprar
             </Button>
           </S.ButtonWrapper>
         </S.TextBlock>
 
         <S.Image
-          src="/img/hero-illustration.svg"
-          alt="Ilustração de um desenvolvedor em frente a um computador com várias linhas de código."
+          src={getImageUrl(header.image.url)}
+          alt={header.image.alternativeText}
         />
       </S.Content>
     </Container>
