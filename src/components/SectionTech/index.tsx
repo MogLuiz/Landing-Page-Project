@@ -5,23 +5,26 @@ import React from 'react'
 import { Heading, Container } from '../index'
 
 // Utils
-import icons from './content'
+import { getImageUrl } from 'utils/getImageUrl'
+
+// Types
+import { SectionTechProps } from 'types/api'
 
 // Styles
 import * as S from './styles'
 
-const SectionTech = () => (
+const SectionTech: React.FC<SectionTechProps> = ({ title, techIcons }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
   <S.Wrapper>
     <Container>
-      <Heading reverseColor>Tecnologias utilizadas</Heading>
+      <Heading reverseColor>{title}</Heading>
       <S.IconsContainer>
-        {icons.map(({ name, image }) => (
-          <S.Icon key={name}>
-            <S.Icons src={`img/tech/${image}`} alt={name} loading="lazy" />
-            <S.IconsName>{name}</S.IconsName>
+        {techIcons.map(({ title, icon }) => (
+          <S.Icon key={title}>
+            <S.Icons src={getImageUrl(icon.url)} alt={title} loading="lazy" />
+            <S.IconsName>{title}</S.IconsName>
           </S.Icon>
         ))}
       </S.IconsContainer>

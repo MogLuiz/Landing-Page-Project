@@ -28,7 +28,8 @@ import { GetStaticProps } from 'next'
 const Index: React.FC<LandingPageProps> = ({
   logo,
   header,
-  sectionAboutProject
+  sectionAboutProject,
+  sectionTech
 }) => (
   // -------------------------------------------------
   // Render
@@ -36,7 +37,7 @@ const Index: React.FC<LandingPageProps> = ({
   <>
     <SectionHero logo={logo} header={header} />
     <SectionAboutProject {...sectionAboutProject} />
-    <SectionTech />
+    <SectionTech {...sectionTech} />
     <SectionConcepts />
     <SectionModules />
     <SectionAgenda />
