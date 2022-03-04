@@ -4,21 +4,21 @@ import React from 'react'
 // Components
 import { Heading, Container, CardModule } from '../index'
 
-// Utils
-import content from './content'
+// Types
+import { SectionModulesProps } from 'types/api'
 
 // Styles
 import * as S from './styles'
 
-const SectionModules = () => (
+const SectionModules: React.FC<SectionModulesProps> = ({ title, modules }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
   <Container>
-    <Heading reverseColor>Módulos deste curso</Heading>
+    <Heading reverseColor>{title}</Heading>
 
     <S.Content>
-      {content.map(({ title, subtitle, description }, index) => (
+      {modules.map(({ title, subtitle, description }, index) => (
         <CardModule key={index} title={title} subTitle={subtitle}>
           <div dangerouslySetInnerHTML={{ __html: description }} />
         </CardModule>
