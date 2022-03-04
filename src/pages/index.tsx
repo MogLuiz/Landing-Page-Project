@@ -29,7 +29,8 @@ const Index: React.FC<LandingPageProps> = ({
   logo,
   header,
   sectionAboutProject,
-  sectionTech
+  sectionTech,
+  sectionConcepts
 }) => (
   // -------------------------------------------------
   // Render
@@ -38,7 +39,7 @@ const Index: React.FC<LandingPageProps> = ({
     <SectionHero logo={logo} header={header} />
     <SectionAboutProject {...sectionAboutProject} />
     <SectionTech {...sectionTech} />
-    <SectionConcepts />
+    <SectionConcepts {...sectionConcepts} />
     <SectionModules />
     <SectionAgenda />
     <PricingBox />
