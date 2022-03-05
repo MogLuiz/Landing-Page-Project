@@ -1,5 +1,6 @@
 // Packages
 import React from 'react'
+import { SectionAboutUsProps } from 'types/api'
 
 // Components
 import { Heading, Container, ProfileCard } from '../index'
@@ -10,22 +11,22 @@ import content from './content'
 // Styles
 import * as S from './styles'
 
-const SectionAboutUs = () => (
+const SectionAboutUs: React.FC<SectionAboutUsProps> = ({ title, authors }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
   <Container>
-    <Heading reverseColor>Quem somos nós?</Heading>
+    <Heading reverseColor>{title}</Heading>
 
     <S.Content>
-      {content.map((profile) => (
+      {authors.map((author) => (
         <ProfileCard
-          key={profile.name}
-          name={profile.name}
-          role={profile.role}
-          image={profile.image}
-          socialLinks={profile.socialLinks}
-          description={profile.description}
+          key={author.name}
+          name={author.name}
+          role={author.role}
+          image={author.photo}
+          socialLinks={author.socialLinks}
+          description={author.description}
         />
       ))}
     </S.Content>
