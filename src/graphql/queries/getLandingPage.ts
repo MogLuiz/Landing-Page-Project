@@ -113,6 +113,16 @@ fragment sectionConcepts on LandingPage {
   }
 }
 
+fragment sectionAboutProject on LandingPage {
+  sectionAboutProject {
+    title
+    description
+    image {
+      ...image
+    }
+  }
+}
+
 query GET_LANDING_PAGE {
   landingPage {
     ...logo
