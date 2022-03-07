@@ -104,24 +104,7 @@ fragment sectionAboutUs on LandingPage {
   }
 }
 
-fragment sectionConcepts on LandingPage {
-  sectionConcepts {
-    title
-    concepts {
-      title
-    }
-  }
-}
 
-fragment sectionAboutProject on LandingPage {
-  sectionAboutProject {
-    title
-    description
-    image {
-      ...image
-    }
-  }
-}
 
 query GET_LANDING_PAGE {
   landingPage {
