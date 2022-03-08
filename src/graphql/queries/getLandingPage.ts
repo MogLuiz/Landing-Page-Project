@@ -104,7 +104,18 @@ fragment sectionAboutUs on LandingPage {
   }
 }
 
-
+fragment sectionReviews on LandingPage {
+  sectionReviews {
+    title
+    reviews {
+      name
+      text
+      photo {
+        ...image
+      }
+    }
+  }
+}
 
 query GET_LANDING_PAGE {
   landingPage {
@@ -117,6 +128,7 @@ query GET_LANDING_PAGE {
     ... sectionAgenda
     ...pricingBox
     ...sectionAboutUs
+    ...sectionReviews
   }
 }
 `

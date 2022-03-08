@@ -13,9 +13,9 @@ import * as S from './styles'
 import { getImageUrl } from 'utils/getImageUrl'
 
 const icons = {
-  twitter: <FaTwitter />,
-  github: <GrGithub />,
-  dribbble: <FaDribbble />
+  Twitter: <FaTwitter />,
+  Github: <GrGithub />,
+  Dribbble: <FaDribbble />
 }
 
 const ProfileCard: React.FC<Authors> = ({
