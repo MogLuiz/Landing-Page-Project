@@ -5,9 +5,6 @@ import { SectionAboutUsProps } from 'types/api'
 // Components
 import { Heading, Container, ProfileCard } from '../index'
 
-// Utils
-import content from './content'
-
 // Styles
 import * as S from './styles'
 
@@ -24,7 +21,7 @@ const SectionAboutUs: React.FC<SectionAboutUsProps> = ({ title, authors }) => (
           key={author.name}
           name={author.name}
           role={author.role}
-          image={author.photo}
+          photo={author.photo}
           socialLinks={author.socialLinks}
           description={author.description}
         />

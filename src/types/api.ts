@@ -67,15 +67,17 @@ export type PricingBoxProps = {
   }
 }
 
+export type SocialLink = {
+  title: string
+  url: string
+}
+
 export type Authors = {
   photo: LogoProps
   name: string
   role: string
   description: string
-  socialLinks: {
-    title: string
-    url: string
-  }
+  socialLinks: SocialLink[]
 }
 
 export type SectionAboutUsProps = {
