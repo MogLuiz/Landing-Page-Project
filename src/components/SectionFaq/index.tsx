@@ -4,23 +4,23 @@ import React from 'react'
 // Components
 import { Container, Heading } from '../index'
 
-// Utils
-import faq from './content'
+// Types
+import { SectionFaqProps } from 'types/api'
 
 // Styles
 import * as S from './styles'
 
-const SectionFaq = () => (
+const SectionFaq: React.FC<SectionFaqProps> = ({ title, questions }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
   <S.Wrapper>
     <S.Content>
       <Container>
-        <Heading>FAQ</Heading>
+        <Heading>{title}</Heading>
 
         <S.Questions>
-          {faq.map(({ question, answer }, index) => (
+          {questions.map(({ question, answer }, index) => (
             <S.Question key={index}>
               <Heading lineBottom>{question}</Heading>
               <div dangerouslySetInnerHTML={{ __html: answer }} />
