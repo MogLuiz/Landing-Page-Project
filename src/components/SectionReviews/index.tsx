@@ -5,8 +5,8 @@ import Slider from 'react-slick'
 // Components
 import { Container, Heading, ReviewCard } from '../index'
 
-// Utils
-import reviews from './content'
+// Types
+import { SectionReviewsProps } from 'types/api'
 
 // Styles
 import * as S from './styles'
@@ -33,7 +33,7 @@ const settings = {
   ]
 }
 
-const SectionReviews = () => (
+const SectionReviews: React.FC<SectionReviewsProps> = ({ reviews, title }) => (
   // -------------------------------------------------
   // Render
   // -------------------------------------------------
@@ -42,12 +42,12 @@ const SectionReviews = () => (
 
     <S.Content>
       <Slider {...settings}>
-        {reviews.map(({ name, image, description }, index) => (
+        {reviews.map(({ name, photo, text }, index) => (
           <ReviewCard
             key={index}
             name={name}
-            image={image}
-            description={description}
+            image={photo.url}
+            description={text}
             id={index}
           />
         ))}

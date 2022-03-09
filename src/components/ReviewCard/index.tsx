@@ -1,6 +1,8 @@
 // Packages
+import { IconsName } from 'components/SectionTech/styles'
 import React, { useEffect } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
+import { getImageUrl } from 'utils/getImageUrl'
 
 // Styles
 import * as S from './styles'
@@ -37,21 +39,8 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
   return (
     <S.Card>
       <S.User>
-        <S.Image>
-          <source
-            srcSet={require(`@images/reviews/${image}?webp`)}
-            type="image/webp"
-          />
-          <source
-            srcSet={require(`@images/reviews/${image}`)}
-            type="image/jpg"
-          />
-          <img
-            src={require(`@images/reviews/${image}`)}
-            loading="lazy"
-            alt={name}
-          />
-        </S.Image>
+        <S.Image src={getImageUrl(image)} alt={name} loading="lazy" />
+
         <S.Name>{name}</S.Name>
       </S.User>
       <S.Text>
