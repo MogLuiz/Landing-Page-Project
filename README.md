@@ -1,39 +1,80 @@
-# Simple NextJS Quick Start
+<h1 align="center">
+    <img alt="Landing Page Logo" width="450" height="170" src="https://user-images.githubusercontent.com/58401291/164558188-226646bc-7539-44bd-8467-ce1073cf073d.png" />
+    <br>
+</h1>
 
-A simple project starter to work with React, NextJS and Styled Components
 
-You can see the example in [https://nextjs-quickstart.now.sh/](https://nextjs-quickstart.now.sh/)
+<h4 align="center">
+Landing Page Frontend
+</h4>
 
-### 📦 Install
 
+<p align="center">
+   <a href="#dart-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-tópicos">Tópicos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-executando-o-projeto">Executando o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sunglasses-autor">Autor</a>
+</p>
+
+
+
+## :dart: Objetivo
+
+<p>
+   Landing Page developed using NextJS, GraphQL, GraphQL Request, Typescript, Testing Library, Jest and Styled Components.
+</p>
+
+
+## :books: Tópicos
+
+-   [x] [NextJS](https://nextjs.org/docs)
+-   [x] [GraphQL](https://graphql.org/learn/)
+-   [x] [GraphQL Request](https://github.com/prisma-labs/graphql-request)
+-   [x] [Typescript](https://stitches.dev/docs/variants)
+-   [x] [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+-   [x] [Styled Components](https://styled-components.com/docs)
+
+
+## :rocket: Executando o Projeto
+
+Primeiramente, você precisa clonar o template do repositório:
+
+```sh
+git clone https://github.com/MogLuiz/Landing-Page-Project.git
 ```
-$ git clone https://github.com/guilouro/simple-nextjs-quick-start.git
 
-$ yarn install
+Navegue até o diretório criado:
+
+```sh
+cd Landing-Page-Project
 ```
 
-### 🔨 How to use
+(Opcional) Abra o projeto no VSCode:
 
-Runs next which starts Next.js in development mode
-
-```bash
-$ yarn dev
+```sh
+code .
 ```
 
-Runs next build which builds the application for production usage
+Instale as dependências do projeto:
 
-```bash
-$ yarn build
+```sh
+# Utilizando o yarn
+yarn
+
+# Utilizando o npm
+npm install
 ```
 
-Runs next start which starts a Next.js production server
+Inicie a aplicação:
 
-```bash
-$ yarn start
+```sh
+yarn dev
 ```
 
-Runs next build and export which exports a files in a `out` folder to deploy
+## :sunglasses: Autor
 
-```bash
-$ yarn deploy
-```
+| [<img src="https://avatars.githubusercontent.com/u/58401291?v=4" width="75px;"/>][1] |
+| :-------------------------------------------------------------------: |
+|                         [Luiz Henrique][1]                          |
+
+[1]: https://github.com/MogLuiz
